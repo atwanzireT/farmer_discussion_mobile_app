@@ -7,128 +7,110 @@
     tools:context=".homeActivity"
     android:background="#F7F7F7">
 
-    <RelativeLayout
-        android:id="@+id/topBar"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white">
+        android:layout_height="wrap_content">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <RelativeLayout
+               android:id="@+id/topBar"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@color/white">
 
-        <ImageView
-            android:id="@+id/logoImg"
-            android:layout_width="44dp"
-            android:layout_height="44dp"
-            android:src="@drawable/logo"
-            android:paddingStart="10dp"/>
+               <ImageView
+                   android:id="@+id/logoImg"
+                   android:layout_width="44dp"
+                   android:layout_height="44dp"
+                   android:src="@drawable/logo"
+                   android:paddingStart="10dp"/>
 
-        <TextView
-            android:id="@+id/logoName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingTop="5dp"
-            android:text="Harvest"
-            android:fontFamily="sans-serif"
-            android:textColor="@color/black"
-            android:layout_toRightOf="@id/logoImg"
-            android:textSize="24dp" />
+               <TextView
+                   android:id="@+id/logoName"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:paddingTop="5dp"
+                   android:text="Harvest"
+                   android:fontFamily="sans-serif"
+                   android:textColor="@color/black"
+                   android:layout_toRightOf="@id/logoImg"
+                   android:textSize="24dp" />
 
-        <ImageButton
-            android:id="@+id/profileIconBar"
-            style="@style/Widget.MaterialComponents.Button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="110dp"
-            android:layout_marginTop="5dp"
-            android:layout_toRightOf="@id/logoName"
-            android:src="@drawable/ic_baseline_supervised_user_circle"
-            tools:ignore="SpeakableTextPresentCheck" />
+               <ImageButton
+                   android:id="@+id/profileIconBar"
+                   style="@style/Widget.MaterialComponents.Button"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="110dp"
+                   android:layout_marginTop="5dp"
+                   android:layout_toRightOf="@id/logoName"
+                   android:src="@drawable/ic_baseline_supervised_user_circle"
+                   tools:ignore="SpeakableTextPresentCheck" />
 
-        <ImageButton
-            style="@style/Widget.MaterialComponents.Button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/profileIconBar"
-            android:src="@drawable/ic_baseline_search"
-            android:layout_marginTop="5dp"
-            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+               <ImageButton
+                   style="@style/Widget.MaterialComponents.Button"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_toRightOf="@+id/profileIconBar"
+                   android:src="@drawable/ic_baseline_search"
+                   android:layout_marginTop="5dp"
+                   tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
-    </RelativeLayout>
-    <Button
-        android:id="@+id/addissueBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/topBar"
-        android:text="Add Issue"
-        android:layout_centerHorizontal="true"
-        android:layout_marginVertical="5dp"
-        />
+           </RelativeLayout>
+           <Button
+               android:id="@+id/addissueBtn"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/topBar"
+               android:text="Add Issue"
+               android:layout_centerHorizontal="true"
+               android:layout_marginVertical="5dp"
+               />
 
-    <ScrollView
-        android:id="@+id/post_scrol"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/addissueBtn"
-        android:layout_above="@+id/bottonNavigationView"
-        >
+           <ScrollView
+               android:id="@+id/post_scrol"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/addissueBtn"
+               >
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+               <RelativeLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
 
-            <include
-                android:id="@+id/categorySection"
-                layout="@layout/categories"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginBottom="10dp" />
+                   <include
+                       android:id="@+id/categorySection"
+                       layout="@layout/categories"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_centerHorizontal="true"
+                       android:layout_marginStart="10dp"
+                       android:layout_marginBottom="10dp" />
 
-            <include
-                android:id="@+id/searchInput"
-                layout="@layout/searchtool"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_below="@id/categorySection"
-                />
-
-
-
-<!--            <include-->
-<!--                android:id="@+id/post_card"-->
-<!--                layout="@layout/post_card"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginTop="10dp"-->
-<!--                android:layout_below="@id/searchInput"/>-->
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/post_listRV"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/searchInput"
-                android:layout_marginTop="10dp"/>
-
-<!--            <include-->
-<!--                android:id="@+id/text_post"-->
-<!--                layout="@layout/text_card"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginTop="10dp"-->
-<!--                android:layout_below="@+id/post_card"/>-->
-
-<!--            <include-->
-<!--                android:id="@+id/post_card2"-->
-<!--                layout="@layout/post_card"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginTop="10dp"-->
-<!--                android:layout_below="@+id/text_card"/>-->
-
-        </RelativeLayout>
-    </ScrollView>
+                   <include
+                       android:id="@+id/searchInput"
+                       layout="@layout/searchtool"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_centerHorizontal="true"
+                       android:layout_below="@id/categorySection"
+                       />
 
 
+
+                   <androidx.recyclerview.widget.RecyclerView
+                       android:id="@+id/post_listRV"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@id/searchInput"
+                       android:layout_marginTop="10dp"/>
+
+               </RelativeLayout>
+           </ScrollView>
+
+       </RelativeLayout>
+    </FrameLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottonNavigationView"
