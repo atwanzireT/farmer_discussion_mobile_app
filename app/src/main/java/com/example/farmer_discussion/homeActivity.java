@@ -46,7 +46,7 @@ public class homeActivity extends AppCompatActivity {
         database.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                for(DataSnapshot dataSnapshot : snapshot.getChildren()){
+                for( DataSnapshot dataSnapshot : snapshot.getChildren()){
                     IssueModal issueModal = dataSnapshot.getValue(IssueModal.class);
                     list.add(issueModal);
                 }

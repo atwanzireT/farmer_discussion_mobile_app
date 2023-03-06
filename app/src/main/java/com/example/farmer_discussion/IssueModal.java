@@ -3,6 +3,9 @@ package com.example.farmer_discussion;
 public class IssueModal {
 
     String title, detail, author;
+
+    public IssueModal(){}
+//    constructor
     public IssueModal(String title, String detail, String author) {
         this.title = title;
         this.detail = detail;
