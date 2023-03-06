@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "1027403995510",
+    "firebase_url": "https://farmer-discussion-default-rtdb.firebaseio.com",
+    "project_id": "farmer-discussion",
+    "storage_bucket": "farmer-discussion.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1027403995510:android:a4920f307f49ee19424257",
+        "android_client_info": {
+          "package_name": "com.example.farmer_discussion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1027403995510-1ciraejma676afm10f6rf4bbdq1frpdh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0D5yhSCNnwlQAuIhMIkCEZniHvV3HLOA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1027403995510-1ciraejma676afm10f6rf4bbdq1frpdh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1027403995510:android:d5e48334d8a724eb424257",
+        "android_client_info": {
+          "package_name": "com.example.firebase_setup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1027403995510-1ciraejma676afm10f6rf4bbdq1frpdh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0D5yhSCNnwlQAuIhMIkCEZniHvV3HLOA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1027403995510-1ciraejma676afm10f6rf4bbdq1frpdh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

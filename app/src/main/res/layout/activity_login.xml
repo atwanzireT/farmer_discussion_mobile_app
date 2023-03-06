@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:id="@+id/inputlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="20dp">
+
+            <ImageView
+                android:id="@+id/loginlogoImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/loginlogotxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loginlogoImg"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="serif"
+                android:text="Harvest"
+                android:textColor="#046004"
+                android:textSize="36dp" />
+
+            <EditText
+                android:id="@+id/email_loginField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loginlogotxt"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:hint="Email"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/pwd_loginField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email_loginField"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:hint="Password"
+                android:minHeight="48dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/buttonlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inputlayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp">
+
+            <Button
+                android:id="@+id/loginBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Log in"
+                android:onClick="loginFunc" />
+
+            <Button
+                android:id="@+id/forgotPwdBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password"
+                android:layout_toRightOf="@+id/loginBtn"
+                android:layout_margin="10dp"
+                android:backgroundTint="#FF0000"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonlayout"
+            android:layout_centerHorizontal="true"
+            >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't Have An Account"
+                android:onClick="dontHaveAccFunc"/>
+        </RelativeLayout>
+        <ProgressBar
+            android:id="@+id/loginProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

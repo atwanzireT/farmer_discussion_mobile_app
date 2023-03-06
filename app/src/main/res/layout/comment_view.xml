@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        >
+
+        <ImageView
+            android:id="@+id/commetProfileIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profile"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/commetProfileIcon"
+            android:text="How can i make it to that coffee"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/comment_background"
+            android:padding="10dp"
+            />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

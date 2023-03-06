@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/iconlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/logotxt"
+        >
+
+        <ImageView
+            android:id="@+id/phoneIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_phone"
+            android:layout_marginRight="50dp"/>
+
+        <ImageView
+            android:id="@+id/chatIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_chat_bubble"
+            android:layout_toRightOf="@+id/phoneIcon"
+            android:layout_marginLeft="50dp"/>
+
+        <ImageView
+            android:id="@+id/cashIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_attach_money"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/logoImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/logotxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Harvest"
+        android:textSize="36dp"
+        android:fontFamily="serif"
+        android:textColor="#046004"
+        android:layout_below="@+id/logoImg"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/connectTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Connect"
+        android:textSize="20dp"
+        android:layout_below="@+id/iconlayout"/>
+    <TextView
+        android:id="@+id/withFarmersTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="With Farmers"
+        android:textSize="20dp"
+        android:layout_below="@+id/connectTxt"/>
+    <TextView
+        android:id="@+id/experienceTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="To Share Experiences"
+        android:textSize="20dp"
+        android:layout_below="@+id/withFarmersTxt"/>
+
+    <Button
+        android:id="@+id/textButton"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Get Sarted"
+        android:onClick="signUpFunctionality"
+        android:backgroundTint="#046004"
+        />
+
+</RelativeLayout>
