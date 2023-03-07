@@ -27,7 +27,7 @@
             android:layout_height="wrap_content">
 
             <include
-                android:id="@+id/commentPost"
+                android:id="@+id/comments_post"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 layout="@layout/comment_post"
@@ -38,7 +38,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Comments 21"
-                android:layout_below="@+id/commentPost"
+                android:layout_below="@+id/comments_post"
                 android:textSize="18dp"
                 android:layout_margin="10dp"
                 />
